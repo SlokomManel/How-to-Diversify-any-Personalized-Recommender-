@@ -20,7 +20,7 @@ book_tags = pd.read_csv('goodbook/book_tags.csv')
 tags = pd.read_csv('goodbook/tags.csv')
 
 
-df_book = pd.read_csv ("/Users/mslokom/Documents/RecSys_News/goodbook/processed_GB_Data.csv", sep=",", names= ["user", "item", "genre"])
+df_book = pd.read_csv ("RecSys_News/goodbook/processed_GB_Data.csv", sep=",", names= ["user", "item", "genre"])
 # df_book = df_book[['item']].drop_duplicates()
 unique_items_genres = df_book.reset_index(drop=True).drop_duplicates(subset=['item', 'genre'], keep='last')
 unique_items_genres = unique_items_genres [['item', 'genre']]
@@ -86,7 +86,7 @@ predictions_file_paths = [
     ("goodbook/results/Random/version_RecSys/RS-100_0.02_Add.csv", "data_3"),
     ("goodbook/results/Random/version_RecSys/RS-100_0.05_Add.csv", "data_4"),
     ("goodbook/results/Random/version_RecSys/RS-100_0.1_Add.csv", "data_5"),
-    # ("/Users/mslokom/Documents/RecSys_News/goodbook/results/RS-100_0.5_Add.csv", "data_6"),
+    # ("RecSys_News/goodbook/results/RS-100_0.5_Add.csv", "data_6"),
 ]
 
 # Create a dictionary to store DataFrames
@@ -157,9 +157,9 @@ for i, dataset in enumerate(datasets):
 results_df = pd.DataFrame(results)
 
 # Save the DataFrame to a CSV file
-# results_df.to_csv(f'/Users/mslokom/Documents/RecSys_News/goodbook/results/fair_ndcg_results-{algorithm_to_focus}.csv', index=False)
+# results_df.to_csv(f'RecSys_News/goodbook/results/fair_ndcg_results-{algorithm_to_focus}.csv', index=False)
 
-results_df_norm = results_df.copy () #pd.read_csv ("/Users/mslokom/Documents/RecSys_News/jobs_server/NRMS/nrms_results/fair_ndcg_results-nrms_2step.csv")
+results_df_norm = results_df.copy () #pd.read_csv ("RecSys_News/jobs_server/NRMS/nrms_results/fair_ndcg_results-nrms_2step.csv")
 results_df_norm ["normalized"] = results_df_norm ["fair_ndcg_score"] / max (results_df_norm ["fair_ndcg_score"])#.max()
 
 import seaborn as sns  # Import seaborn for color palettes
@@ -204,7 +204,7 @@ predictions_file_paths = [
     ("goodbook/results/Random/version_RecSys/RS-100_0.02_Obf.csv", "data_3"),
     ("goodbook/results/Random/version_RecSys/RS-100_0.05_Obf.csv", "data_4"),
     ("goodbook/results/Random/version_RecSys/RS-100_0.1_Obf.csv", "data_5"),
-    # ("/Users/mslokom/Documents/RecSys_News/goodbook/results/RS-100_0.5_Obf.csv", "data_6"),
+    # ("RecSys_News/goodbook/results/RS-100_0.5_Obf.csv", "data_6"),
 ]
 
 # Create a dictionary to store DataFrames
@@ -270,9 +270,9 @@ for i, dataset in enumerate(datasets):
 # Create a DataFrame from the results
 results_df = pd.DataFrame(results)
 # Save the DataFrame to a CSV file
-# results_df.to_csv(f'/Users/mslokom/Documents/RecSys_News/goodbook/results/fair_ndcg_results-{algorithm_to_focus}-2-step.csv', index=False)
+# results_df.to_csv(f'RecSys_News/goodbook/results/fair_ndcg_results-{algorithm_to_focus}-2-step.csv', index=False)
 
-results_df_norm = results_df.copy () #pd.read_csv ("/Users/mslokom/Documents/RecSys_News/jobs_server/NRMS/nrms_results/fair_ndcg_results-nrms_2step.csv")
+results_df_norm = results_df.copy () #pd.read_csv ("RecSys_News/jobs_server/NRMS/nrms_results/fair_ndcg_results-nrms_2step.csv")
 results_df_norm ["normalized"] = results_df_norm ["fair_ndcg_score"] / max (results_df_norm ["fair_ndcg_score"])#.max()
 import seaborn as sns  # Import seaborn for color palettes
 

@@ -14,7 +14,7 @@ def load_user_item_matrix_GB_All(max_user=943, max_item=761):
     # Number of unique book_ids: 761
     # Sparsity of the data: 0.9816
     df = np.zeros(shape=(max_user, max_item))
-    with open("/Users/mslokom/Documents/RecSys_News/goodbook/ratings_filtered_goodbook.csv", 'r') as f: #subset_GB_O All_2370_allUsers_KNN_fancy_imputation_GB_k_30
+    with open("RecSys_News/goodbook/ratings_filtered_goodbook.csv", 'r') as f: #subset_GB_O All_2370_allUsers_KNN_fancy_imputation_GB_k_30
 
         for line in f.readlines():
             user_id, movie_id, rating, genre = line.split(",")
@@ -33,7 +33,7 @@ def load_user_item_matrix_GB_TrainingSet(max_user=943, max_item=729): #2370 2835
     :return: user-item matrix
     """
     df = np.zeros(shape=(max_user, max_item))
-    with open("/Users/mslokom/Documents/RecSys_News/goodbook/trainVal_small.csv", 'r') as f: # Flixster/trainingSet_GB_1.dat New_Flixster/GB_train.csv
+    with open("RecSys_News/goodbook/trainVal_small.csv", 'r') as f: # Flixster/trainingSet_GB_1.dat New_Flixster/GB_train.csv
 
         for line in f.readlines():
             user_id, movie_id, rating = line.split(",")
@@ -53,7 +53,7 @@ def load_user_item_matrix_GB_TestSet(max_user=943, max_item=729): #2370 2835 246
     :return: user-item matrix
     """
     df = np.zeros(shape=(max_user, max_item))
-    with open("/Users/mslokom/Documents/RecSys_News/goodbook/test_small.csv", 'r') as f: # Flixster/trainingSet_GB_1.dat New_Flixster/GB_train.csv
+    with open("RecSys_News/goodbook/test_small.csv", 'r') as f: # Flixster/trainingSet_GB_1.dat New_Flixster/GB_train.csv
 
         for line in f.readlines():
             user_id, movie_id, rating = line.split(",")
@@ -74,7 +74,7 @@ def load_user_item_matrix_GB_Test(max_user=943, max_item=761): # 2370 2008
     :return: user-item matrix
     """
     df = np.zeros(shape=(max_user, max_item))
-    with open("/Users/mslokom/Documents/RecSys_News/goodbook/test_small.csv", 'r') as f:
+    with open("RecSys_News/goodbook/test_small.csv", 'r') as f:
 
         for line in f.readlines():
             user_id, movie_id, rating, genre = line.split(",")
