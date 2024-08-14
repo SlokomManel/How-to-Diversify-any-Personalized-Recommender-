@@ -8,3 +8,8 @@ Additionally, our approach promotes provider fairness by facilitating exposure t
 ![diagram](diagram.png)
 
 Overall diagram for recommendation. To the left, we zoom in on our personalized pre-processing. The one-step and two-step variants show our approach to altering the user profile. $c1$ is identified as a representative category for user $u$. $\{i1, i4, i7, i10, i50 \}$ are $u$'s past interactions. $\{c1, c2, c3, c4\}$ represent item categories. With one-step pre-processing, $i2$, and $i6$ are personalized items added to $u$ (in green). Following two-step pre-processing, $i4$ and $i10$ are removed from $u$ (in red).
+
+
+# Python packages to install for recommendations:
+- Lenskit (lkpy)
+- recommenders (Microsoft)
