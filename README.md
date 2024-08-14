@@ -5,4 +5,4 @@ Our pre-processing technique offers flexibility and can seamlessly integrate int
 Our results show that our approach generates diverse recommendations, ensuring users are exposed to a wider range of items. Furthermore, leveraging pre-processed data for training leads to recommender systems achieving performance levels comparable to, and in some cases, better than those trained on original, unmodified data.
 Additionally, our approach promotes provider fairness by facilitating exposure to minority or niche categories. 
 
-![Diagram](Diagram.png)
+![diagram](diagram.png)
