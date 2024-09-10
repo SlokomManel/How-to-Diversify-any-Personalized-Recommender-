@@ -31,7 +31,7 @@ X_imputed = knn_imputer.solve(X, mask)
 # Round imputed values to the nearest integer
 X_filled_knn = np.rint(X_imputed)
 
-output_file = "/export/scratch2/home/manel/RecSys_News/MIND/MINDlarge/train/"
+output_file = "/RecSys_News/MIND/MINDlarge/train/"
 
 print("saving") 
 rating = 1
@@ -65,7 +65,7 @@ X_imputed = knn_imputer.fit_transform(X)
 X_filled_knn = np.rint(X_imputed)
 
 
-output_file = "/export/scratch2/home/manel/RecSys_News/MIND/MINDlarge/train/"
+output_file = "/RecSys_News/MIND/MINDlarge/train/"
 #with open(output_file + "TrainingSet_users_KNN_fancy_imputation_MinD_k1000_AllUsers.dat", 'w') as f:
 #    for index_user, user in enumerate(X_filled_knn):
 #        for index_movie, rating in enumerate(user):
