@@ -10,6 +10,32 @@ Additionally, our approach promotes provider fairness by facilitating exposure t
 Overall diagram for recommendation. To the left, we zoom in on our personalized pre-processing. The one-step and two-step variants show our approach to altering the user profile. $c1$ is identified as a representative category for user $u$. $\{i1, i4, i7, i10, i50 \}$ are $u$'s past interactions. $\{c1, c2, c3, c4\}$ represent item categories. With one-step pre-processing, $i2$, and $i6$ are personalized items added to $u$ (in green). Following two-step pre-processing, $i4$ and $i10$ are removed from $u$ (in red).
 
 
-# Python packages to install for recommendations:
+## Python packages to install for recommendations:
 - Lenskit (lkpy)
 - recommenders (Microsoft)
+
+## Data Sets
+
+Our data splits and variants can be shared **on demand**. The original datasets used in our experiments can be accessed through the following sources:
+
+- [MIND (Microsoft News Dataset)](https://msnews.github.io/)
+- Goodbook website
+
+
+## Citation: 
+```
+@article{Slokom2021PerBlur,
+title = {DiverseMe: How to Diversify \texttt{any} Personalized Recommender?},
+author = {Manel Slokom and Savvina Danil and Laura Hollink},
+booktitle="Advances in Information Retrieval",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="--",
+isbn="
+}
+```
+
+# Contacts: 
+Feel free to contact me at manel.slokom@cwi.nl or manel.slokom@live.fr for questions!
+
