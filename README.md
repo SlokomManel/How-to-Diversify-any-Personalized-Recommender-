@@ -18,6 +18,10 @@ Our data splits and variants can be shared **on demand**. The original datasets 
 - [MIND (Microsoft News Dataset)](https://msnews.github.io/)
 - Goodbook website
 
+## Accepted at: 
+- ECIR'2025
+- [Open access in Arxiv ](https://arxiv.org/html/2405.02156v2)
+
 
 ## Citation: 
 ```
